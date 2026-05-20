@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Casas de Apostas - Links Diretos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Animated background particles */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(2px 2px at 20% 30%, rgba(255,215,0,0.3), transparent),
+                radial-gradient(2px 2px at 40% 70%, rgba(255,215,0,0.2), transparent),
+                radial-gradient(2px 2px at 60% 40%, rgba(255,215,0,0.3), transparent),
+                radial-gradient(2px 2px at 80% 10%, rgba(255,215,0,0.2), transparent),
+                radial-gradient(2px 2px at 10% 80%, rgba(255,215,0,0.3), transparent),
+                radial-gradient(2px 2px at 70% 90%, rgba(255,215,0,0.2), transparent),
+                radial-gradient(2px 2px at 90% 50%, rgba(255,215,0,0.3), transparent),
+                radial-gradient(2px 2px at 50% 50%, rgba(255,215,0,0.15), transparent),
+                radial-gradient(2px 2px at 30% 20%, rgba(255,215,0,0.25), transparent),
+                radial-gradient(2px 2px at 85% 75%, rgba(255,215,0,0.2), transparent);
+            pointer-events: none;
+            z-index: 0;
+            animation: twinkle 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @keyframes shine {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 400;
+        }
+
+        .counter-badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 24px;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: #FFD700;
+            font-weight: 600;
+        }
+
+        .search-container {
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            margin: 20px auto 30px;
+            padding: 0 20px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 14px 20px 14px 50px;
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .search-container input:focus {
+            border-color: #FFD700;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 38px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            opacity: 0.5;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #FFD700, #FFA500, #FF6347);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 215, 0, 0.3);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(255, 215, 0, 0.05);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card:hover .card-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .card:hover .card-name {
+            color: #FFD700;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .card-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+            word-break: break-all;
+            transition: color 0.3s ease;
+            line-height: 1.3;
+        }
+
+        .card-url {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.35);
+            margin-top: 6px;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .card:hover .card-url {
+            color: rgba(255, 215, 0, 0.6);
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
+        }
+
+        .no-results span {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #000;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .scroll-top:hover {
+            transform: scale(1.1);
+        }
+
+        .scroll-top.visible {
+            display: flex;
+        }
+
+        footer {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 35px 15px 20px;
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 12px;
+            }
+
+            .card {
+                padding: 16px;
+                border-radius: 12px;
+            }
+
+            .card-icon {
+                font-size: 1.6rem;
+            }
+
+            .card-name {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+
+        /* Loading animation */
+        .card {
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎰 Casas de Apostas</h1>
+        <p>Todos os links em um só lugar</p>
+        <div class="counter-badge" id="counter"></div>
+    </header>
+
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Buscar casa de apostas..." autocomplete="off">
+    </div>
+
+    <div class="container">
+        <div class="grid" id="grid"></div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <footer>
+        <p>⚠️ Jogue com responsabilidade. Apostas são proibidas para menores de 18 anos.</p>
+    </footer>
+
+    <script>
+        const sites = [
+            "vaidebet.bet.br", "jogajunto.bet.br", "bra.bet.br", "xx.bet.br",
+            "tropino.bet.br", "ice.bet.br", "kbet.bet.br", "nossa.bet.br",
+            "1xbet.bet.br", "betcaixa.bet.br", "bau.bet.br", "milhao.bet.br",
+            "jogalimpo.bet.br", "mmabet.bet.br", "esportivavip.bet.br", "vert.bet.br",
+            "cgg.bet.br", "fanbit.bet.br", "pix.bet.br", "ganhei.bet.br",
+            "esporte365.bet.br", "mcgames.bet.br", "montecarlos.bet.br", "luck.bet.br",
+            "meridianbet.bet.br", "pin.bet.br", "multi.bet.br", "aposta1.bet.br",
+            "apostamax.bet.br", "bateu.bet.br", "esportiva.bet.br", "a247.bet.br",
+            "versus.bet.br", "betcopa.bet.br", "bet4.bet.br", "blaze.bet.br",
+            "betwarrior.bet.br", "drbingo.bet.br", "betgorillas.bet.br", "bravo.bet.br",
+            "betfast.bet.br", "brazino777.bet.br", "ijogo.bet.br", "9f.bet.br",
+            "br4.bet.br", "bacanaplay.bet.br", "apostou.bet.br", "reals.bet.br",
+            "bingo.bet.br", "betgo.bet.br", "betsson.bet.br", "big.bet.br",
+            "apostar.bet.br", "betpontobet.bet.br", "donald.bet.br", "bullsbet.bet.br",
+            "jogao.bet.br", "lider.bet.br", "geralbet.bet.br", "up.bet.br",
+            "7k.bet.br", "cassino.bet.br", "hiper.bet.br", "estrelabet.bet.br",
+            "vupi.bet.br", "f12.bet.br", "luva.bet.br", "bandbet.bet.br",
+            "megaposta.bet.br", "rivalo.bet.br", "stake.bet.br", "ginga.bet.br",
+            "afun.bet.br", "sortenabet.bet.br", "sorteonline.bet.br", "tiger.bet.br",
+            "pq777.bet.br", "betesporte.bet.br", "suprema.bet.br", "maxima.bet.br",
+            "casadeapostas.bet.br", "vbet.bet.br", "seu.bet.br", "4win.bet.br",
+            "4play.bet.br", "apostaganha.bet.br", "receba.bet.br", "bet365.bet.br",
+            "novibet.bet.br", "betfair.bet.br", "sportingbet.bet.br", "betano.bet.br",
+            "ona.bet.br", "oleybet.bet.br", "betboom.bet.br", "pinnacle.bet.br",
+            "matchbook.bet.br", "bolsadeaposta.bet.br", "fulltbet.bet.br", "alfa.bet.br",
+            "arenaplus.bet.br", "bingoplus.bet.br", "betmgm.bet.br", "seguro.bet.br",
+            "7games.bet.br", "sporty.bet.br", "galera.bet.br", "kto.bet.br",
+            "betnacional.bet.br", "rdp.bet.br", "superbet.bet.br"
+        ];
+
+        const icons = ["🎰","🎲","🏆","⚽","🎯","💰","🔥","⭐","🍀","💎","🎮","🏅","👑","🚀","🎪","🌟","🃏","🎱","🏇","🎳"];
+
+        const grid = document.getElementById('grid');
+        const searchInput = document.getElementById('searchInput');
+        const counter = document.getElementById('counter');
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        counter.textContent = `${sites.length} sites disponíveis`;
+
+        function getIcon(index) {
+            return icons[index % icons.length];
+        }
+
+        function renderSites(filter = '') {
+            grid.innerHTML = '';
+            const filtered = sites.filter(s => s.toLowerCase().includes(filter.toLowerCase()));
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="no-results"><span>😕</span>Nenhum site encontrado</div>';
+                return;
+            }
+
+            filtered.forEach((site, index) => {
+                const card = document.createElement('a');
+                card.className = 'card';
+                card.href = `https://${site}`;
+                card.target = '_blank';
+                card.rel = 'noopener noreferrer';
+                card.style.animationDelay = `${index * 0.02}s`;
+                card.innerHTML = `
+                    <span class="card-icon">${getIcon(index)}</span>
+                    <span class="card-name">${site.replace('.bet.br', '')}</span>
+                    <span class="card-url">${site}</span>
+                `;
+                grid.appendChild(card);
+            });
+
+            counter.textContent = `${filtered.length} site${filtered.length !== 1 ? 's' : ''} encontrado${filtered.length !== 1 ? 's' : ''}`;
+        }
+
+        renderSites();
+
+        searchInput.addEventListener('input', (e) => {
+            renderSites(e.target.value);
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+    </script>
+
+</body>
+</html>
